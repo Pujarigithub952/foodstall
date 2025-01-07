@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Bu Bos | Tentang</title>
+    <link rel="icon" type="image/x-icon" href="assets/logoImg.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://kit.fontawesome.com/8ee6b1ea1e.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        header, nav, section, footer, aside, article, figure, figcaption {
+            display: block
+        }
+
+        header {
+            background-color: #FF7B54;
+        }
+
+        nav {
+            background-color: #FFB26B;
+            padding-left: 10px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        nav ul {
+            padding: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-left: 12px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav li a.hoverableNav {
+            color : white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li a.hoverableNav:hover {
+            text-shadow: -1px 0 #FFD56F, 0 1px #FFD56F, 1px 0 #FFD56F, 0 -1px #FFD56F;
+        }
+
+        nav li a.current {
+            color: #ee5c2f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section.about {
+            float: left;
+            border-right : 1px solid #FFD56F;
+            width: 78%;
+        }
+
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+
+        figure {
+            float: left;
+            width: 24%;
+            padding: 5px;
+            margin: 25px 20px;
+        }
+
+        figure img {
+            width: 500px;
+            height: 400px;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            font-size: 90%;
+            text-align: left;
+            color : #939B62
+        }
+
+        hgroup {
+            margin-top: 36px;
+            margin-left: 525px;
+            font-size: 110%;
+            text-align: center;
+        }
+
+        hgroup h2 {
+            color : #FF7B54
+        }
+
+        hgroup h3 {
+            color : #FFB26B
+        }
+
+        section.about p {
+            font-size: 106%;
+            margin-top : 20px;
+            text-align: justify;
+            padding: 0px 2rem;
+        }
+
+        fgroup h3 {
+            color : #939B62;
+            margin-top: 15px;
+        }
+
+        article p {
+            margin-top : 5px;
+        }
+
+        aside {
+            width : 18%;
+            float: right;
+            padding-right: 20px;
+        }
+
+        aside section.map img {
+            width: 235px;
+            height: 180px;
+        }
+
+        aside section a {
+            display: block;
+            padding : 10px;
+            margin-right: 12px;
+            border-bottom : 1px solid #FFD56F;
+            text-decoration : none;
+            color : #939B62;
+        }
+
+        aside section a:hover {
+            color:#FFB26B;
+            background-color: whitesmoke;
+        }
+
+        aside h2 {
+            padding: 30px 0px 10px 0px;
+            color:#FF7B54;
+        }
+
+        aside section a i {
+            margin-right: 14px;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 80%;
+            padding : 5px 0px 3px 20px;
+            background-color: #FF7B54;
+            color : white;
+        }
+
+        #loading {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.75;
+            background-color: #fff;
+            z-index: 99;
+        }
+
+        #loading-image {
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body onload="setTimeout(removeLoad, 1500)">
+    <div id="loading">
+        <img id="loading-image" src="./assets/loading.gif" alt="Loading..." />
+    </div>
+    
+    <header class="title">
+        <img src="./assets/logoImg.png" width="100" height="80" style="display: inline-block; padding-top : 5px;">
+        <div style="display: inline-block; padding-left: 4px; padding-bottom: 3px; transform: translateY(-11.5px);">
+            <h1 style="color: white;">Warung Bu Bos</h1>
+            <h3 style="padding-left: 3px; color: #FFD56F;">Tak pernah tergantikan, selalu di hati..</h3>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="hoverableNav">Beranda</a></li>
+                <li><a href="menu.html" class="hoverableNav">Menu</a></li>
+                <li><a href="" class="current">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <article>
+            <figure>
+                <img src="./assets/warungImg.jpg">
+                <figcaption>Suasana Warung Bu Bos</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Warung Bu Bos</h2>
+                <h3>Spesialis Makanan Indonesia</h3>
+                <p>Warung yang baru saja didirikan oleh Bu Bos dengan bantuan Pak Bos di tahun 2023 ini, menyediakan berbagai macam makanan khas Indonesia yang sehat dengan harga yang terjangkau.</p>
+                <p>Dengan suasana tempat yang nyaman dan sangat menggambarkan Indonesia yang ditambah dengan citarasa mantap dari makanan yang disajikan, tentu akan memberikan pengalaman yang tak terlupakan dan tak tergantikan</p>
+                
+                <fgroup>
+                    <h3>Datang dan rasakan sendiri kenikmatannya!</h3>
+                </fgroup>
+            </hgroup>
+        </article>
+    </section>
+
+    <section class="sidebar">
+        <aside>
+            <section class="map">
+                <h2>Lokasi</h2>
+
+                <img src="./assets/mapImg.jpg">
+            </section>
+            <section class="contact">
+                <h2>Kontak</h2>
+
+                <a href=""><i class="fa-solid fa-phone"></i> (+62)85112345678</p>
+                <a href=""><i class="fa-brands fa-instagram"></i> @warungbubos.sby</p>
+                <a href=""><i class="fa-brands fa-facebook"></i> Warung Bu Bos Sby</a>
+            </section>
+        </aside>
+    </section>
+
+    <div class="hidden">
+        <h1>Hidden</h1>
+    </div>
+
+    <footer>
+        &copy; 2022 Warung Bu Bos
+    </footer>
+
+    <script>
+        function removeLoad() {
+            document.getElementById("loading").style.display="none";
+        } 
+    </script>
+</body>
+</html>
